@@ -17,9 +17,15 @@ public:
 	// the bool return type is true if the word is found in the paragraph; false otherwise
 	// the vector return type contains the line numbers at which the search word is found
 	// if the search word is not found an empty vector is returned
-	tuple<bool, vector<int>> contains(const Word& search_word) const;
+	tuple<bool, vector<int>> contains(const Word& search_word) ;
+
 
 private:
+
+	vector< string>paragraphStack;
+vector< string>wordStack;
+vector< int>wordlineNumber;
+
 
 };
 
