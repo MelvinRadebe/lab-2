@@ -23,8 +23,15 @@ public:
 	// (according to the brief, words less than 3 characters are not queryable)
 	bool isQueryable() const;
 
+
+
 private:
 	string word_;
+	const string PUNCTUATION = "~`!@#$%^&*()-_+={}[]\\|:;'<>?,./\""s;
+	void convertAlltoLowerCase();
+	void eliminatePunctuation();
+	bool wordConsistsOnlyPunc();
+	bool wordContainsSpace();
 };
 
 #endif
