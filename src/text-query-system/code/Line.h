@@ -16,9 +16,11 @@ public:
 	Line(const string& line);
 	// returns true if the search word is found in the line; false otherwise
 	bool contains(const Word& search_word) const;
+	string getLine() const ;
 
 private:
 	vector<string> wordsInLine_;
+	string line_;
 };
 
 #endif
