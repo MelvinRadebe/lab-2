@@ -64,10 +64,10 @@ void Word::eliminatePunctuation()
 		}
 	}
 
-	for (auto elements : word_)
-	{
-		std::cout << elements << std::endl;
-	}
+	// for (auto elements : word_)
+	// {
+	// 	std::cout << elements << std::endl;
+	// }
 }
 
 bool Word::wordConsistsOnlyPunc()
@@ -107,4 +107,9 @@ bool Word::wordContainsSpace()
 	}
 
 	return false;
+}
+
+string Word::getWord() const
+{
+	return word_;
 }

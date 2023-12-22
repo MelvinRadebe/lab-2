@@ -22,6 +22,7 @@ public:
 	// returns true if queryable, false otherwise
 	// (according to the brief, words less than 3 characters are not queryable)
 	bool isQueryable() const;
+	string getWord() const;
 
 
 
